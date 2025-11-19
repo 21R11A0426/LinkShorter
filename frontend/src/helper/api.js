@@ -1,11 +1,12 @@
-import axios from 'axios';
-
-const API_URL = import.meta.env.MODE === 'production' 
-  ? '/' 
+export const APP_URL = import.meta.env.MODE === 'production'
+  ? window.location.origin 
   : 'http://localhost:8080';
 
+
+const API_BASE = import.meta.env.MODE === 'production' ? '/' : 'http://localhost:8080';
+
 const api = axios.create({
-  baseURL: API_URL
+  baseURL: API_BASE
 });
 
 export const getLinks = () => api.get('/links');

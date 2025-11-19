@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Trash2, Copy, ExternalLink, BarChart2, Loader2, AlertTriangle } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { getLinks, deleteLink } from '../helper/api';
+import { getLinks, deleteLink, APP_URL } from '../helper/api';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 
 export default function LinkTable() {
@@ -113,7 +113,7 @@ export default function LinkTable() {
                     <td className="p-5 font-medium">
                       <div className="flex items-center gap-2">
                         <a 
-                            href={`http://localhost:8080/${link.shortCode}`} 
+                           href={`${APP_URL}/${link.shortCode}`} 
                             target="_blank" 
                             rel="noreferrer" 
                             className="text-indigo-600 hover:text-[#0b1736] flex items-center gap-1"
