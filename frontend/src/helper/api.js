@@ -1,3 +1,4 @@
+import axios from 'axios';
 export const APP_URL = import.meta.env.MODE === 'production'
   ? window.location.origin 
   : 'http://localhost:8080';
