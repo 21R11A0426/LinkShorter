@@ -1,7 +1,7 @@
 # 🚀 TinyLink – Full Stack URL Shortener
 # TinyLink – Full Stack URL Shortener
 
-![TinyLink Screenshot](./TInyLink.png)
+![TinyLink Screenshot](./TinyLink.png)
 
 TinyLink is a modern, full‑stack URL shortening platform built using **React (Vite)** and **Node.js + Express**.  
 It enables users to shorten URLs, create custom aliases, track link clicks, and manage all URLs through a clean real‑time dashboard.
